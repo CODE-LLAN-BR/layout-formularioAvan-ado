@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="reset.css" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap");
+    </style>
+
+    <title>Formulário|Avançado</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <header>
+        <h2>Avalie a sua mentoria</h2>
+        <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+        <img
+          src="./img/header.png"
+          alt="Imagem de um balão contendo cinco estrelas,com três estrelas em destaque."
+        />
+      </header>
+      <div class="top">
+        <h2>Informações pessoais</h2>
+      </div>
+      <form>
+        <div class="form-page">
+          <fieldset>
+            <div class="fieldset-container">
+              <div id="name-surname">
+                <div class="input-wrapper">
+                  <label for="name-box">Nome</label>
+                  <input type="text" id="name-box" class="input-style"  required/>
+                </div>
+                <div class="input-wrapper">
+                  <label for="surname-box">Sobrenome</label>
+                  <input type="text" id="surname-box" class="input-style"  required/>
+                </div>
+              </div>
+              <div class="input-wrapper">
+                <label for="email-box"
+                  >Email <span>(digite um email válido)</span></label
+                >
+                <input type="email" id="email-box" class="input-style"  required/>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div class="fieldset-container_two">
+              <legend id="legend-two">Informações do mentor</legend>
+              <div class="select-container">
+                <label for="select-mentor">Selecione quem foi seu mentor</label>
+                <select name="" id="select-mentor" class="input-style" required>
+                  <option></option>
+                  <option value="">Flavio</option>
+                  <option value="">Matheus</option>
+                  <option value="">Travis</option>
+                </select>
+              </div>
+              <div class="feedback-container">
+                <label for="feedback">Feedback sobre o mentor</label>
+                <textarea name="" id="feedback"></textarea>
+              </div>
+              <div class="checkbox-container">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" id="check-input" />
+                  <label for="check-input" id="label-check"
+                    >Todas as minhas dúvidas foram esclarecidas durante a
+                    mentoria.</label
+                  >
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div class="fieldset-container" id="date-start-finish">
+              <legend id="next-mentoring">Agendando próxima mentoria</legend>
+
+              <div class="input-wrapper">
+                <label for="date-box">Data <span>(DD/MM/AAAA)</span></label>
+                <input type="date" id="date-box" class="input-style" />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="start-time" id="label-start">Das</label>
+                <input type="time" id="start-time" class="input-style" />
+              </div>
+              <div class="input-wrapper">
+                <label for="finish-time">Até</label>
+                <input type="time" id="finish-time" class="input-style" />
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <button type="submit" class="button-save">Salvar</button>
+      </form>
+    </div>
+  </body>
+</html>
